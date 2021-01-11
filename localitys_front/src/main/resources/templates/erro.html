@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+	<link href="/bootstrap/css/bootstrap.css" th:href="@{/bootstrap/css/bootstrap.css}" rel="stylesheet"  />
+	<title>Dados Região Sul</title>
+</head>
+<body>
+
+	<div class="container">
+		<br/>
+		<div class="card text-white bg-danger mb-3">
+		  	<div class="card-header">
+		  		<div class="alert alert-danger" role="alert">
+				  ATENÇÃO!
+				</div>
+		  	</div>
+	  	  	<div class="card-body">
+	  	  		<div class="alert alert-danger">
+				 	<h5 class="card-title">Erro ao realizar comando.</h5>
+				 	<p th:text="${erro}" />
+	  	  		
+	  	  			<a type="button" class="btn btn-secondary" th:href="@{/}">Fechar</a>
+				</div>
+	  	  		
+	  	  	</div>
+		</div>
+		
+		
+	</div>
+	
+	<script src="/bootstrap/js/bootstrap.js" th:src="@{/bootstrap/js/bootstrap.js}"></script>
+	<script src="/js/myJs.js" th:src="@{/js/myJs.js}"></script>
+	
+</body>
+</html>
